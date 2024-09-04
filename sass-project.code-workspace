@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Documents/GitHub/sass-project"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "test-site-sass"
+	}
+}

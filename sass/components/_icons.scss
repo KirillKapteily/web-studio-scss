@@ -1,0 +1,72 @@
+.client-ico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .client-ico:hover{
+   fill: #188CE8;
+  }
+  
+  .so-net-ico-item-item{
+    transform: cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+
+  .so-net-link .so-net-ico:hover{
+    background-color: $accent-color;
+  }
+
+  .so-net-ico-link{
+    display: block;
+    padding: 8px 8px;
+  }
+
+  .svg-ico-item{
+    background-color: rgba(255, 255, 255, 0.1);
+    background-position: center;
+    border-radius: 50%;
+  } 
+  
+  .svg-ico-list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-left:0px ;
+    justify-content: center;
+    margin-bottom: 42px;
+    align-items: center;
+  }
+
+  .so-net-ico{
+   
+    width: 20px;
+  height: 20px;
+  display: block;
+  fill: #e9e6e6;
+  }
+  
+  
+  .so-net-ico:hover{
+     fill:#2196F3;
+  }
+  
+  .svg-ico-item:hover{
+  background-color: $accent-color;
+  border-radius: 50%;
+  
+  }
+
+  .so-net-link:hover{
+    color: white;
+    fill: white;
+    }
+    
+    .so-net-link{
+      color: white;
+    fill: currentColor;
+      display: block;
+      padding: 12px 12px;
+      transition-property: background-color, transform;
+      transition-duration: 250ms;
+    }

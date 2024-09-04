@@ -1,0 +1,84 @@
+.section {
+    background-color: $our-command-substrate;
+  }
+
+  .button-order {
+    font-family: "Roboto";
+    background-color: $accent-color;
+    color: white;
+    border: none;
+    width: 216px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition-property: background-color, transform;
+    transition-duration: 250ms;
+    border-radius: 4px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    .button-order:hover {
+        background-color: $accent-color-hover;
+       
+      }
+  }
+  
+  .active-ground {
+    font-family: "Roboto";
+    background-color: $our-command-substrate;
+    color: black;
+    border: none;
+    width: 125px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 6%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .active-ground:hover {
+    background-color: $accent-color;
+    color: $white;
+  }
+  }
+  
+  .client-title{
+    color: rgb(33, 33, 33);
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 3%;
+  text-align: center;
+  }
+  
+  .client-list{
+  list-style: none;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  }
+
+  .client-item{
+    border: 1px solid rgb(175, 177, 184);
+    border-radius: 4px;
+    display: flex;
+    width: 170px;
+    justify-content: center;
+      align-items: center;
+    height: 92px;
+    fill:  rgb(175, 177, 184);
+
+    .client-item:hover{
+        fill: $accent-color;
+        }
+    }
+    
+   
+  

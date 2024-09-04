@@ -1,0 +1,210 @@
+.header-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-right: auto;
+    width: 500px;
+    align-items: center;
+  }
+
+  .header-tell {
+    color: $footer-efectivity-substrate-color;
+    text-decoration: none;
+    font-size: 14px;
+    color: #757575;
+  font-weight: 500;
+  }
+
+  .hr {
+    width: 99.7%;
+    display: flex;
+    margin: 0px 0px;
+    justify-content: center;
+    border: 1px solid rgb(236, 236, 236);
+  }
+
+  .con-wrap {
+    display: flex;
+    justify-content: flex-end;
+  
+  }
+
+  header {
+    display: flex;
+    height: 80px;
+  }
+  
+  .header-list-contacts {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .header-mail{
+    margin-right: 10px;
+    /* position: relative;
+    right: 30px;
+    align-items: center; */
+    /* justify-content: end; */
+    /* fill: currentColor; */
+  width: 16px;
+  height: 16px;
+  }
+  
+  .header-mail:hover{
+    fill: #188CE8;
+  }
+  
+  .header-phone{
+    margin-right: 10px;
+    fill: #212121;
+  }
+
+  .header-phone:hover{
+    fill:#188CE8;
+  }
+
+  .webstudio {
+    color: $accent-color;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 3%;
+    text-decoration: none;
+    width: 145px;
+    font-weight: 31px;
+    margin-top: 7px;
+    padding-left: 35px;
+    margin-top: 22px;
+    margin-right: 93px;
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
+  }
+
+  @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+  .studio {
+    color: black;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 3%;
+    width: 145px;
+    height: 31px;
+  }
+  
+  .studio2 {
+    color: rgb(255, 255, 255);
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 3%;
+    width: 145px;
+    height: 31px;
+  }
+  
+  .active {
+    color: rgb(33, 33, 33);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 2%;
+    text-decoration: none;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  }
+
+  .active-now {
+    font-family: "Roboto";
+    background-color: $accent-color;
+    color: white;
+    border: none;
+    width: 73px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 6%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .active-ground1{
+    font-family: "Roboto";
+    background-color: $our-command-substrate;
+    color: black;
+    border: none;
+    width: 73px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 6%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .active-ground1:hover{
+    background-color: $accent-color;
+    color: $white;
+  }
+  
+  .active-now:hover {
+    background-color: $accent-color-hover;
+  }
+  
+  .active:hover {
+    color: $accent-color;
+  }
+  
+  .active-r-now{
+    color: rgb(33, 33, 33);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 2%;
+    text-decoration: none;
+    color: $accent-color;
+    text-decoration: none;
+    animation: jello-horizontal 0.9s both;
+  }
+  
