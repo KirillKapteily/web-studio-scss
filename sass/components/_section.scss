@@ -1,8 +1,21 @@
-.section {
-    background-color: $our-command-substrate;
-  }
+.efectivity {
+  width: 1600;
+  height: 600px;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right,
+      rgba(46, 47, 59, 0.247),
+      rgba(46, 47, 59, 0.247)),
+    url("/images/efimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-  .button-order {
+
+  .button__order {
     font-family: "Roboto";
     background-color: $accent-color;
     color: white;
@@ -14,71 +27,267 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition-property: background-color, transform;
     transition-duration: 250ms;
+    /* line-height: 30px; */
+    /* margin-bottom: 30px; */
+    /* letter-spacing: 6%; */
     border-radius: 4px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
 
-    .button-order:hover {
-        background-color: $accent-color-hover;
-       
-      }
-  }
-  
-  .active-ground {
-    font-family: "Roboto";
-    background-color: $our-command-substrate;
-    color: black;
-    border: none;
-    width: 125px;
-    height: 38px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 6%;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      background-color: $accent-color-hover;
+     
+    }
 
-  .active-ground:hover {
-    background-color: $accent-color;
-    color: $white;
-  }
   }
   
-  .client-title{
-    color: rgb(33, 33, 33);
-  font-family: "Roboto";
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: 3%;
-  text-align: center;
-  }
-  
-  .client-list{
-  list-style: none;
-  gap: 30px;
-  display: flex;
-  justify-content: center;
-  }
-
-  .client-item{
-    border: 1px solid rgb(175, 177, 184);
+  .card__img__clock::before,
+  .card__img__clock::after {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-size: contain;
     border-radius: 4px;
+  }
+  
+  .card__img__clock::after {
+    background-image: url(/images/antenna.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+  }
+  
+  .card__img__clock::after {
     display: flex;
-    width: 170px;
-    justify-content: center;
-      align-items: center;
-    height: 92px;
-    fill:  rgb(175, 177, 184);
+    background-position: center;
+    background-color: var(--our-command-substrate);
+    background-size: 70px;
+  }
 
-    .client-item:hover{
-        fill: $accent-color;
-        }
+  .card__img::before,
+.card__img::after {
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  border-radius: 4px;
+}
+
+.card__img::after {
+  background-image: url(/images/antenna.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.card__img::after {
+  display: flex;
+  background-position: center;
+  background-color: $our-command-substrate;
+  background-size: 70px;
+}
+
+.card__img__clock::before,
+.card__img__clock::after {
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  border-radius: 4px;
+}
+
+.card__img__clock::after {
+  background-image: url(/images/clock.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.card__img__clock::after {
+  display: flex;
+  background-position: center;
+  background-color: $our-command-substrate;
+  background-size: 70px;
+}
+
+.card__img__gra::before,
+.card__img__gra::after {
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  border-radius: 4px;
+}
+
+.card__img__gra::after {
+  background-image: url(/images/diagram.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.card__img__gra::after {
+  display: flex;
+  background-position: center;
+  background-color: $our-command-substrate;
+  background-size: 70px;
+}
+
+.card__img__astro::before,
+.card__img__astro::after {
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  border-radius: 4px;
+}
+
+.card__img__astro::after {
+  background-image: url(/images/astronaut.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.card__img__astro::after {
+  display: flex;
+  background-position: center;
+  background-color: $our-command-substrate;
+  background-size: 70px;
+}
+
+.list__title {
+    color: rgb(33, 33, 33);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 3%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  
+  }
+
+  .p__description {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 3%;
+    color: $grey-text-color;
+  }
+  
+  .our__team__lisst {
+    list-style: none;
+    margin-bottom: 94px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .our__team__item {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+
+  .our__team {
+    color: $footer-efectivity-substrate-color;
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 3%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .section__our__team {
+    background-color: $our-command-substrate;
+    margin-top: 188px;
+    margin-bottom: 50px;
+  
+  }
+
+  .our__team__picture__list {
+    list-style: none;
+    display: block;
+  }
+
+  .name {
+    color: rgb(33, 33, 33);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 3%;
+    display: flex;
+    justify-content: center;
+  }
+  
+.decrip__2{
+  color: rgb(117, 117, 117);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 3%;
+  text-align: left;
+  color: $grey-text-color;
+  padding-left: 24px;
+}
+
+  .decrip {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 3%;
+    color: $grey-text-color;
+    display: flex;
+    justify-content: center;
+  }
+
+  .svg__ico__item{
+    background-color: rgba(255, 255, 255, 0.1);
+    background-position: center;
+    border-radius: 50%;
+
+    &:hover{
+      background-color: $accent-color;
+      border-radius: 50%;
+      }
+
+  } 
+  
+  .svg__ico__list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-left:0px ;
+    justify-content: center;
+    margin-bottom: 42px;
+    align-items: center;
+  }
+
+    .so__net__ico{
+      width: 20px;
+    height: 20px;
+    display: block;
+    color: rgb(175, 177, 184);
+
+    &:hover{
+      fill:#ffffff;
+      color: #ffffff;
+   }
+
     }
     
-   
-  
+    
+    
+
+    .svg__ico__item:hover{
+      background-color: $accent-color;
+      border-radius: 50%;
+      
+      }

@@ -1,6 +1,73 @@
-.header-list {
+// ХЕДЕР
+.test{
+    // background-color: rgb(255, 0, 0);
+    // width: 100px;
+    // height: 100px;
+    display: flex;
+  height: 80px;
+
+    .ttt{
+background-color: rgba(127, 255, 212, 0.541);
+    }
+}
+
+.test2{
+    background-position: center;
+}
+
+.header__tell {
+  color: $footer-efectivity-substrate-color;
+  text-decoration: none;
+  font-size: 14px;
+  color: #757575;
+font-weight: 500;
+}
+
+.active__ground{
+  font-family: "Roboto";
+  background-color: $our-command-substrate;
+  color: black;
+  border: none;
+  width: 125px;
+  height: 38px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  /* margin-bottom: 30px; */
+  letter-spacing: 6%;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+.active__ground:hover {
+  background-color: $accent-color;
+  color: $white;
+}
+
+}
+
+.fo__so__net__list{
+  list-style: none;
+  display: flex;
+  margin-top: 0px;
+  margin-left: 0px;
+padding-top: 0px;
+  padding-left: 0px;
+  gap: 10px;
+justify-content: center;
+}
+
+.footer__title{
+  color:white;
+  display: flex;
+  margin-top: 0px;
+}
+
+  .header__list {
     list-style: none;
     display: flex;
+    justify-content: space-between;
     justify-content: flex-start;
     gap: 50px;
     margin-right: auto;
@@ -8,34 +75,7 @@
     align-items: center;
   }
 
-  .header-tell {
-    color: $footer-efectivity-substrate-color;
-    text-decoration: none;
-    font-size: 14px;
-    color: #757575;
-  font-weight: 500;
-  }
-
-  .hr {
-    width: 99.7%;
-    display: flex;
-    margin: 0px 0px;
-    justify-content: center;
-    border: 1px solid rgb(236, 236, 236);
-  }
-
-  .con-wrap {
-    display: flex;
-    justify-content: flex-end;
-  
-  }
-
-  header {
-    display: flex;
-    height: 80px;
-  }
-  
-  .header-list-contacts {
+  .header__list__contacts {
     list-style: none;
     display: flex;
     gap: 50px;
@@ -44,34 +84,145 @@
     align-items: center;
   }
   
-  .header-nav {
+  .header__nav {
     display: flex;
     justify-content: space-between;
   }
-  
-  
-  .header-mail{
+
+  .header__mail{
     margin-right: 10px;
-    /* position: relative;
-    right: 30px;
-    align-items: center; */
-    /* justify-content: end; */
-    /* fill: currentColor; */
+    
   width: 16px;
   height: 16px;
-  }
-  
-  .header-mail:hover{
+
+  .header__mail:hover{
     fill: #188CE8;
   }
+
+  }
   
-  .header-phone{
+  .header__phone{
     margin-right: 10px;
     fill: #212121;
+
+    .header__phone:hover{
+      fill:#188CE8;
+    }
+  
+
+  }
+  
+  .active:hover {
+    color: $accent-color;
   }
 
-  .header-phone:hover{
-    fill:#188CE8;
+  .active__r__now{
+    color: rgb(33, 33, 33);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 2%;
+    text-decoration: none;
+    color: $accent-color;
+    text-decoration: none;
+    animation: jello-horizontal 0.9s both;
+  }
+
+  .active__now {
+    font-family: "Roboto";
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    width: 73px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 6%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .active__ground1{
+    font-family: "Roboto";
+    background-color: $our-command-substrate;
+    color: black;
+    border: none;
+    width: 73px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    /* margin-bottom: 30px; */
+    letter-spacing: 6%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .active__ground1:hover{
+    background-color: $accent-color;
+    color: $white;
+  }
+
+  }
+  
+ 
+  
+  .active__now:hover {
+    background-color: $accent-color-hover;
+  }
+
+   
+   .active {
+    color: rgb(33, 33, 33);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 2%;
+    text-decoration: none;
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+   .decor__2{
+    position: relative;
+    top: 25px;
+    right: -126px;
+    width: 78px;
+  height: 4px;
+    border-radius: 2px;
+  background: rgb(33, 150, 243);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .decor{
+    position: relative;
+    top: 30px;
+    right: 2px;
+    width: 48px;
+  height: 4px;
+    border-radius: 2px;
+  background: rgb(33, 150, 243);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mailto__2 {
+    text-decoration: none;
+    color: $grey-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 2%;
   }
 
   .webstudio {
@@ -91,6 +242,90 @@
       -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
               animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     
+  }
+  
+  
+   @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  
+  .studio {
+    color: black;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 3%;
+    width: 145px;
+    height: 31px;
+  }
+  
+  .studio2 {
+    color: rgb(255, 255, 255);
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 3%;
+    width: 145px;
+    height: 31px;
+  }
+
+  @keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @keyframes slide-in-blurred-top {
+    0% {
+      transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      transform-origin: 50% 0%;
+      filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) scaleY(1) scaleX(1);
+      transform-origin: 50% 50%;
+      filter: blur(0);
+      opacity: 1;
+    }
   }
 
   @-webkit-keyframes scale-up-center {
@@ -113,98 +348,3 @@
               transform: scale(1);
     }
   }
-
-  .studio {
-    color: black;
-    font-family: "Raleway";
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 3%;
-    width: 145px;
-    height: 31px;
-  }
-  
-  .studio2 {
-    color: rgb(255, 255, 255);
-    font-family: "Raleway";
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 3%;
-    width: 145px;
-    height: 31px;
-  }
-  
-  .active {
-    color: rgb(33, 33, 33);
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 2%;
-    text-decoration: none;
-    transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-  }
-
-  .active-now {
-    font-family: "Roboto";
-    background-color: $accent-color;
-    color: white;
-    border: none;
-    width: 73px;
-    height: 38px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 6%;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .active-ground1{
-    font-family: "Roboto";
-    background-color: $our-command-substrate;
-    color: black;
-    border: none;
-    width: 73px;
-    height: 38px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 6%;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .active-ground1:hover{
-    background-color: $accent-color;
-    color: $white;
-  }
-  
-  .active-now:hover {
-    background-color: $accent-color-hover;
-  }
-  
-  .active:hover {
-    color: $accent-color;
-  }
-  
-  .active-r-now{
-    color: rgb(33, 33, 33);
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 2%;
-    text-decoration: none;
-    color: $accent-color;
-    text-decoration: none;
-    animation: jello-horizontal 0.9s both;
-  }
-  
