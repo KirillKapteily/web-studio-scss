@@ -110,7 +110,7 @@ body {
   text-align: center;
 }
 
-.button__order {
+.button__order, .btn__send, .footer__button {
   font-family: "Roboto";
   background-color: #2196F3;
   color: white;
@@ -122,16 +122,13 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition-property: background-color, transform;
   transition-duration: 250ms;
-  /* line-height: 30px; */
-  /* margin-bottom: 30px; */
-  /* letter-spacing: 6%; */
   border-radius: 4px;
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
-.button__order:hover {
+.button__order:hover, .btn__send:hover, .footer__button:hover {
   background-color: #188CE8;
 }
 
@@ -153,7 +150,7 @@ body {
 .card__img__clock::after {
   display: flex;
   background-position: center;
-  background-color: var(--our-command-substrate);
+  background-color: #F5F4FA;
   background-size: 70px;
 }
 
@@ -269,8 +266,8 @@ body {
   list-style: none;
   margin-bottom: 94px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: row;
   gap: 30px;
 }
 
@@ -363,7 +360,6 @@ body {
   color: rgb(175, 177, 184);
 }
 .so__net__ico:hover {
-  fill: #ffffff;
   color: #ffffff;
 }
 
@@ -385,14 +381,11 @@ body {
 }
 
 .header__tell {
-  color: #2F303A;
-  text-decoration: none;
-  font-size: 14px;
   color: #757575;
   font-weight: 500;
 }
 
-.active__ground {
+.active__ground, .active__ground1 {
   font-family: "Roboto";
   background-color: #F5F4FA;
   color: black;
@@ -409,7 +402,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.active__ground .active__ground:hover {
+.active__ground:hover, .active__ground1:hover {
   background-color: #2196F3;
   color: white;
 }
@@ -473,7 +466,7 @@ body {
   fill: #188CE8;
 }
 
-.active:hover {
+.active:hover, .header__tell:hover {
   color: #2196F3;
 }
 
@@ -490,39 +483,11 @@ body {
   animation: jello-horizontal 0.9s both;
 }
 
-.active__now {
-  font-family: "Roboto";
-  background-color: var(--accent-color);
-  color: white;
-  border: none;
-  width: 73px;
-  height: 38px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 6%;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
 .active__ground1 {
-  font-family: "Roboto";
-  background-color: #F5F4FA;
-  color: black;
-  border: none;
   width: 73px;
   height: 38px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  /* margin-bottom: 30px; */
-  letter-spacing: 6%;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.active__ground1 .active__ground1:hover {
+.active__ground1:hover {
   background-color: #2196F3;
   color: white;
 }
@@ -531,7 +496,7 @@ body {
   background-color: #188CE8;
 }
 
-.active {
+.active, .header__tell {
   color: rgb(33, 33, 33);
   font-family: "Roboto";
   font-size: 14px;
@@ -546,7 +511,7 @@ body {
 
 .decor__2 {
   position: relative;
-  top: 25px;
+  top: 20px;
   right: -126px;
   width: 78px;
   height: 4px;
@@ -568,6 +533,11 @@ body {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-page {
+  display: flex;
+  align-items: center;
 }
 
 .mailto__2 {
@@ -709,14 +679,12 @@ footer {
 }
 
 .fo__so__net__item {
-  /* margin-left: 0px;
-  padding-left: 0px; */
   background-color: rgba(255, 255, 255, 0.1);
   background-position: center;
   border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   transition-property: background-color, transform;
   transition-duration: 250ms;
@@ -754,23 +722,7 @@ footer {
 
 .footer__button {
   margin-left: 12px;
-  font-family: "Roboto";
-  background-color: #2196F3;
-  color: white;
-  border: none;
-  width: 216px;
-  height: 50px;
-  font-size: 16px;
-  font-weight: 700;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition-property: background-color, transform;
-  transition-duration: 250ms;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
 .footer__button:hover {
   background-color: #188CE8;
   transform: cubic-bezier(0.4, 0, 0.2, 1);
@@ -849,10 +801,10 @@ footer {
 .main__buttons__list {
   list-style: none;
   display: flex;
+  justify-content: center;
   margin-top: 94px;
   flex-direction: row;
   gap: 8px;
-  justify-content: center;
 }
 
 .main__title {
@@ -866,7 +818,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 }
 
 .main__list {
@@ -930,7 +882,7 @@ footer {
   fill: rgb(175, 177, 184);
 }
 .client__item:hover {
-  color: #2196F3;
+  border-color: #2196F3;
 }
 
 .modal__title {
@@ -953,23 +905,6 @@ footer {
   color: #2196F3;
 }
 
-.btn__send {
-  color: rgb(255, 255, 255);
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 6%;
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background: rgb(33, 150, 243);
-  width: 200px;
-  height: 50px;
-  border-style: none;
-  transition-property: background-color, transform;
-  transition-duration: 250ms;
-}
 .btn__send .btn__send:hover {
   background-color: #188CE8;
   transform: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1028,8 +963,6 @@ footer {
   box-sizing: border-box;
   border-radius: 100%;
   background-color: var(--white);
-  /* display: flex;
-  justify-content: space-between */
 }
 .btn__close .close__img:hover {
   fill: #188CE8;
@@ -1084,13 +1017,13 @@ footer {
   background: rgb(255, 255, 255);
   transform: translate(-50%, -50%);
   /* transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); */
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); */
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .what__we__do {
-  color: var(--footer-efectivity-substrate-color);
+  color: #2F303A;
   font-family: "Roboto";
   font-size: 36px;
   font-weight: 700;
@@ -1116,8 +1049,8 @@ footer {
 .what__we__do__list {
   list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: row;
   gap: 30px;
   padding-left: 0px;
 }
@@ -1133,6 +1066,9 @@ footer {
 }
 
 .thumb > .label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
@@ -1144,7 +1080,4 @@ footer {
   text-align: center;
   text-transform: uppercase;
   margin: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=main.css.map */

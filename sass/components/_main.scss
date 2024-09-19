@@ -1,110 +1,103 @@
-.main{
-    // background-color: rgb(191, 255, 0);
-    // height: 400px;
+.main {
+  // background-color: rgb(191, 255, 0);
+  // height: 400px;
 
-    .lorem{
-        background-color: rgba(255, 0, 187, 0.622);
-    }
+  .lorem {
+    background-color: rgba(255, 0, 187, 0.622);
+  }
 }
 
 .main__item__2 {
-    flex-basis: calc((100% - 20px*370) / 9);
-    border: 1px solid rgb(238, 238, 238);
-  }
+  flex-basis: calc((100% - 20px*370) / 9);
+  border: 1px solid rgb(238, 238, 238);
+}
 
-  .main__item__2:hover {
-  
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  }
+.main__item__2:hover {
 
-  .main__buttons__list {
-    list-style: none;
-    display: flex;
-    margin-top: 94px;
-    flex-direction: row;
-    gap: 8px;
-    justify-content: center;
-  }
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 
-  .main__title {
-    color: rgb(255, 255, 255);
-    font-family: "Roboto";
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 60px;
-    letter-spacing: 6%;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+.main__buttons__list {
+  list-style: none;
+  @include flex1 ();
+  margin-top: 94px;
+  flex-direction: row;
+  gap: 8px;
+}
 
-  .main__list {
-    display: flex;
-    list-style: none;
-    margin-top: 94px;
-    margin-bottom: 50px;
-    padding: 0px;
-    gap: 30px;
-  }
-  
-  .main__list__2 {
-    list-style: none;
-    margin-top: 34px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0px;
-    gap: 27px;
-  }
+.main__title {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 6%;
+  text-transform: uppercase;
+  @include flexunifide ();
+  justify-content: center;
+}
 
-  .client__title{
-    color: rgb(33, 33, 33);
+.main__list {
+  display: flex;
+  list-style: none;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  padding: 0px;
+  gap: 30px;
+}
+
+.main__list__2 {
+  list-style: none;
+  margin-top: 34px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  gap: 27px;
+}
+
+.client__title {
+  color: rgb(33, 33, 33);
   font-family: "Roboto";
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: 3%;
   text-align: center;
-  }
-  
-  .client__list{
+}
+
+.client__list {
   list-style: none;
   gap: 30px;
-  display: flex;
-  justify-content: center;
-  }
-  
-  .client__ico{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: rgb(175, 177, 184);
-color: rgb(175, 177, 184);
+  @include flex1 ();
+}
 
-&:hover{
-  color: #188CE8;
- }
+.client__ico {
+  @include flexunifide ();
+  fill: rgb(175, 177, 184);
+  color: rgb(175, 177, 184);
 
+  &:hover {
+    color: #188CE8;
   }
-  
-  .client__item{
+
+}
+
+.client__item {
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
   display: flex;
   width: 170px;
   justify-content: center;
-    align-items: center;
+  align-items: center;
   height: 92px;
   transition: color 0.3s ease, transform 0.3s ease;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  fill:  rgb(175, 177, 184);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: rgb(175, 177, 184);
 
-  &:hover{
-    color: $accent-color;
-     }
-
+  &:hover {
+    border-color: $accent-color;
   }
-  
+
+}

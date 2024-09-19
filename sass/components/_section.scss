@@ -8,64 +8,57 @@
     url("/images/efimg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexunifide;
   text-align: center;
 }
 
 
-  .button__order {
-    font-family: "Roboto";
-    background-color: $accent-color;
-    color: white;
-    border: none;
-    width: 216px;
-    height: 50px;
-    font-size: 16px;
-    font-weight: 700;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    transition-property: background-color, transform;
-    transition-duration: 250ms;
-    /* line-height: 30px; */
-    /* margin-bottom: 30px; */
-    /* letter-spacing: 6%; */
-    border-radius: 4px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+.button__order {
+  font-family: "Roboto";
+  background-color: $accent-color;
+  color: white;
+  border: none;
+  width: 216px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  border-radius: 4px;
+  @include flexunifide;
+  margin: 0 auto;
 
-    &:hover {
-      background-color: $accent-color-hover;
-     
-    }
+  &:hover {
+    background-color: $accent-color-hover;
 
   }
-  
-  .card__img__clock::before,
-  .card__img__clock::after {
-    content: "";
-    width: 270px;
-    height: 120px;
-    background-size: contain;
-    border-radius: 4px;
-  }
-  
-  .card__img__clock::after {
-    background-image: url(/images/antenna.png);
-    background-size: 100px;
-    background-repeat: no-repeat;
-  }
-  
-  .card__img__clock::after {
-    display: flex;
-    background-position: center;
-    background-color: var(--our-command-substrate);
-    background-size: 70px;
-  }
 
-  .card__img::before,
+}
+
+.card__img__clock::before,
+.card__img__clock::after {
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  border-radius: 4px;
+}
+
+.card__img__clock::after {
+  background-image: url(/images/antenna.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.card__img__clock::after {
+  display: flex;
+  background-position: center;
+  background-color: $our-command-substrate;
+  background-size: 70px;
+}
+
+.card__img::before,
 .card__img::after {
   content: "";
   width: 270px;
@@ -154,78 +147,77 @@
 }
 
 .list__title {
-    color: rgb(33, 33, 33);
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 3%;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  
-  }
+  color: rgb(33, 33, 33);
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3%;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 
-  .p__description {
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 3%;
-    color: $grey-text-color;
-  }
-  
-  .our__team__lisst {
-    list-style: none;
-    margin-bottom: 94px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-  }
+}
 
-  .our__team__item {
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  }
-  
+.p__description {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: $grey-text-color;
+}
 
-  .our__team {
-    color: $footer-efectivity-substrate-color;
-    font-family: "Roboto";
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 42px;
-    letter-spacing: 3%;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-  
-  }
-  
-  .section__our__team {
-    background-color: $our-command-substrate;
-    margin-top: 188px;
-    margin-bottom: 50px;
-  
-  }
+.our__team__lisst {
+  list-style: none;
+  margin-bottom: 94px;
+  @include flex1;
+  flex-direction: row;
+  gap: 30px;
+}
 
-  .our__team__picture__list {
-    list-style: none;
-    display: block;
-  }
+.our__team__item {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
 
-  .name {
-    color: rgb(33, 33, 33);
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 3%;
-    display: flex;
-    justify-content: center;
-  }
-  
-.decrip__2{
+
+.our__team {
+  color: $footer-efectivity-substrate-color;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 3%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.section__our__team {
+  background-color: $our-command-substrate;
+  margin-top: 188px;
+  margin-bottom: 50px;
+
+}
+
+.our__team__picture__list {
+  list-style: none;
+  display: block;
+}
+
+.name {
+  color: rgb(33, 33, 33);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.decrip__2 {
   color: rgb(117, 117, 117);
   font-family: "Roboto";
   font-size: 16px;
@@ -237,57 +229,57 @@
   padding-left: 24px;
 }
 
-  .decrip {
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 3%;
-    color: $grey-text-color;
-    display: flex;
-    justify-content: center;
-  }
+.decrip {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 3%;
+  color: $grey-text-color;
+  display: flex;
+  justify-content: center;
+}
 
-  .svg__ico__item{
-    background-color: rgba(255, 255, 255, 0.1);
-    background-position: center;
+.svg__ico__item {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-position: center;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $accent-color;
     border-radius: 50%;
-
-    &:hover{
-      background-color: $accent-color;
-      border-radius: 50%;
-      }
-
-  } 
-  
-  .svg__ico__list{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding-left:0px ;
-    justify-content: center;
-    margin-bottom: 42px;
-    align-items: center;
   }
 
-    .so__net__ico{
-      width: 20px;
-    height: 20px;
-    display: block;
-    color: rgb(175, 177, 184);
+}
 
-    &:hover{
-      fill:#ffffff;
-      color: #ffffff;
-   }
+.svg__ico__list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding-left: 0px;
+  justify-content: center;
+  margin-bottom: 42px;
+  align-items: center;
+}
 
-    }
-    
-    
-    
+.so__net__ico {
+  width: 20px;
+  height: 20px;
+  display: block;
+  color: rgb(175, 177, 184);
 
-    .svg__ico__item:hover{
-      background-color: $accent-color;
-      border-radius: 50%;
-      
-      }
+  &:hover {
+
+    color: #ffffff;
+  }
+
+}
+
+
+
+
+.svg__ico__item:hover {
+  background-color: $accent-color;
+  border-radius: 50%;
+
+}
