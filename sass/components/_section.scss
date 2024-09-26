@@ -36,6 +36,11 @@
 
 }
 
+.main__card{
+  width: 270px;
+  
+}
+
 .card__img__clock::before,
 .card__img__clock::after {
   content: "";
@@ -171,11 +176,12 @@
   list-style: none;
   margin-bottom: 94px;
   @include flex1;
-  flex-direction: row;
+  // flex-direction: row;
   gap: 30px;
 }
 
 .our__team__item {
+  width: 450px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -260,6 +266,7 @@
   justify-content: center;
   margin-bottom: 42px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .so__net__ico {

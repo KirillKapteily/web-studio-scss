@@ -1,5 +1,174 @@
 .container {
     width: 1170px;
     margin: 0 auto;
-    /* outline: rgb(110, 173, 209) 1px solid; */
   }
+
+  @media (min-width:320px) and (max-width:480px) {
+    .container{
+        width: 300px;
+margin-left: 0px;
+    }
+
+    .webstudio {
+      font-size: 24px;
+      padding-left: 15px;
+    }
+
+.header__list{
+  display: flex;
+  flex-direction: column;
+  width: 10px;
+
+}
+
+.header__list__contacts{
+  display: flex;  
+  flex-direction: column;
+}
+
+.active{
+  display: none;
+}
+
+.active__r__now{
+  display: none;
+}
+
+.main__title{
+  font-size: 26px;
+  font-weight: 900;
+line-height: 42px;
+}
+
+.main__list{
+margin-left: 105px;
+}
+
+.webstudiof{
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.main__title {
+  font-size: 26px;
+}
+
+.what__we__do{
+  display: none;
+}
+
+.footer__button {
+margin-top: 20px;
+}
+
+.card__img::before,
+.card__img::after {
+  content: "";
+  width: 450px;
+  height: 120px;
+  background-size: contain;
+  border-radius: 4px;
+}
+
+.card__img::after {
+  background-image: url(/images/antenna.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.card__img::after {
+  display: flex;
+  background-position: center;
+  background-color: $our-command-substrate;
+  background-size: 70px;
+}
+
+.our__team__picture__list{
+  width: 450px;
+height: 460px;
+}
+
+.card__img__clock::before,
+.card__img__clock::after {
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  border-radius: 4px;
+}
+
+.our__team__lisst{
+  flex-direction: column;
+  display: block;
+  padding-left: 15px;
+}
+
+.main__card{
+  width: 450px;
+}
+
+.main__list{
+  flex-direction: column;
+}
+
+.footer__title{
+  justify-content: center;
+  font-size: 14px;
+}
+
+
+.what__we__do {
+  display: none;
+
+}
+
+.what__we__do__img {
+  display: none;
+}
+
+.what__we__do__item {
+  display: none;
+}
+
+.what__we__do__list {
+  display: none;
+}
+
+.what__w__d {
+  display: none;
+}
+
+.thumb {
+  display: none;
+}
+
+.thumb>.label {
+  display: none;
+}
+
+.client__list{
+  flex-wrap: wrap;
+}
+
+
+.footer__wrapper {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer__button{
+  font-size: 16px;
+}
+
+.footer__form {
+margin-left: 0px !important;
+}
+
+.footer__input {
+  width: 258px;
+  height: 50px;
+}
+
+    }

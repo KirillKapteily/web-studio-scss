@@ -118,6 +118,10 @@ footer {
   color: white;
 }
 
+.webstudiof{
+  @extend .webstudio;
+}
+
 .fo__footer {
   color: rgb(255, 255, 255);
   font-family: "Roboto";

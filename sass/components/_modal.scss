@@ -85,10 +85,8 @@
   border-radius: 50%;
   position: absolute;
   top: 8px;
-  right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  right: 8px;        
+  @include flexunifide;
   width: 30px;
   height: 30px;
   transition-property: fill;
