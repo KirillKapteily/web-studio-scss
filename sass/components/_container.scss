@@ -3,6 +3,80 @@
     margin: 0 auto;
   }
 
+  @media (min-width:768px) and (max-width:1199px){
+
+.container{
+  margin-left: 0px;
+}
+
+.our__team__item{
+  width: 450px;
+}
+
+.footer__form{
+ 
+}
+
+    .webstudio{
+      font-size: 24px;
+    }
+    
+    .our__team__lisst{
+      padding-left: 15px;
+    }
+
+    .main__list {
+      width: 738px;
+    }
+
+
+.our__team__item{
+  width: 354px;
+height: 536px;
+}
+
+    .our__team__picture__list{
+      width: 354px;
+      height: 374px;
+    }
+
+.p__description{
+  width: 354px;
+}
+    
+    .header__list{
+      width: 97px;
+    }
+    
+    .main__list{
+      flex-wrap: wrap;
+    }
+
+    .what__we__do {
+      display: none;
+    
+    }
+    
+    .what__we__do__img {
+      display: none;
+    }
+    
+    .what__we__do__item {
+      display: none;
+    }
+    
+    .what__we__do__list {
+      display: none;
+    }
+    
+    .what__w__d {
+      display: none;
+    }
+
+        }
+
+
+
   @media (min-width:320px) and (max-width:480px) {
     .container{
         width: 300px;
@@ -42,6 +116,10 @@ line-height: 42px;
 
 .main__list{
 margin-left: 105px;
+}
+
+.efectivity {
+  width: 480px;
 }
 
 .webstudiof{
@@ -172,3 +250,4 @@ margin-left: 0px !important;
 }
 
     }
+

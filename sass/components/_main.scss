@@ -67,6 +67,7 @@
 }
 
 .client__list {
+  flex-wrap: wrap;
   list-style: none;
   gap: 30px;
   @include flex1 ();
@@ -88,6 +89,7 @@
   border-radius: 4px;
   display: flex;
   width: 170px;
+  
   justify-content: center;
   align-items: center;
   height: 92px;
