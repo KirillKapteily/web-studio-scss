@@ -98,19 +98,30 @@ body {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
-    margin-left: 0px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .card__img__new {
+    width: 345px !important;
+    height: 120px;
+    border-radius: 4px;
+    background: rgb(245, 244, 250);
+  }
+  .antenna {
+    padding: 25px 144px !important;
+  }
+  .efectivity {
+    width: 100% !important;
   }
   .our__team__item {
     width: 450px;
   }
   .webstudio, .webstudiof {
     font-size: 24px;
+    margin-right: 87px !important;
   }
   .our__team__lisst {
     padding-left: 15px;
-  }
-  .main__list {
-    width: 738px;
   }
   .our__team__item {
     width: 354px;
@@ -124,7 +135,8 @@ body {
     width: 354px;
   }
   .header__list {
-    width: 97px;
+    width: 397px !important;
+    padding-left: 0px;
   }
   .main__list {
     flex-wrap: wrap;
@@ -132,11 +144,24 @@ body {
   .what__we__do {
     display: none;
   }
+  .header__list__contacts {
+    flex-direction: column;
+    padding-left: 0px;
+  }
   .what__we__do__img {
     display: none;
   }
   .what__we__do__item {
     display: none;
+  }
+  .our__team {
+    display: none !important;
+  }
+  .section__our__team {
+    display: none;
+  }
+  .footer__social__networking__wrapper {
+    margin-left: 165px;
   }
   .what__we__do__list {
     display: none;
@@ -147,8 +172,8 @@ body {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
-    width: 300px;
-    margin-left: 0px;
+    max-width: 480px;
+    margin: 0 auto;
   }
   .webstudio, .webstudiof {
     font-size: 24px;
@@ -157,7 +182,17 @@ body {
   .header__list {
     display: flex;
     flex-direction: column;
-    width: 10px;
+    width: 1px !important;
+  }
+  .card__img__new {
+    max-width: 450px !important;
+    min-width: 320px;
+    height: 120px;
+    border-radius: 4px;
+    background: rgb(245, 244, 250);
+  }
+  .antenna {
+    padding: 25px 144px !important;
   }
   .header__list__contacts {
     display: flex;
@@ -173,12 +208,46 @@ body {
     font-size: 26px;
     font-weight: 900;
     line-height: 42px;
+    margin-left: 140px;
   }
-  .main__list {
-    margin-left: 105px;
+  .button__order, .btn__send, .footer__button {
+    margin-left: 140px;
+  }
+  .modal {
+    min-width: 450px !important;
+    height: 609px !important;
+  }
+  .modal__input {
+    width: 370px !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .modal__par {
+    margin: 0px 0px;
+    margin-left: 50px !important;
+  }
+  .terms {
+    font-size: 12px;
+  }
+  .modal__area {
+    margin-top: 0px;
+    width: 370px !important;
+    height: 120px;
+  }
+  .modal__title {
+    font-size: 12px;
+  }
+  .checkbox {
+    position: relative;
+    bottom: 20px;
+    left: 60px;
+  }
+  .btn__close {
+    position: relative;
+    left: 410px;
   }
   .efectivity {
-    width: 480px;
+    width: 100% !important;
   }
   .webstudiof {
     align-items: center;
@@ -189,7 +258,7 @@ body {
     font-size: 26px;
   }
   .what__we__do {
-    display: none;
+    display: none !important;
   }
   .footer__button {
     margin-top: 20px;
@@ -202,16 +271,8 @@ body {
     background-size: contain;
     border-radius: 4px;
   }
-  .card__img::after {
-    background-image: url(/images/antenna.png);
-    background-size: 100px;
-    background-repeat: no-repeat;
-  }
-  .card__img::after {
-    display: flex;
-    background-position: center;
-    background-color: #F5F4FA;
-    background-size: 70px;
+  .backdrop {
+    width: 100%;
   }
   .our__team__picture__list {
     width: 450px;
@@ -229,9 +290,6 @@ body {
     flex-direction: column;
     display: block;
     padding-left: 15px;
-  }
-  .main__card {
-    width: 450px;
   }
   .main__list {
     flex-direction: column;
@@ -313,6 +371,17 @@ body {
 }
 .button__order:hover, .btn__send:hover, .footer__button:hover {
   background-color: #188CE8;
+}
+
+.card__img__new {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: rgb(245, 244, 250);
+}
+
+.antenna {
+  padding: 25px 100px;
 }
 
 .main__card {
@@ -832,6 +901,7 @@ body {
 }
 .footer__wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tel {
