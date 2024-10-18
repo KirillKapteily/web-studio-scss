@@ -469,6 +469,24 @@ body {
   background: rgb(245, 244, 250);
 }
 
+.retinaimg {
+  max-width: 370px;
+  height: auto;
+  display: block;
+}
+
+.retinaimgl {
+  max-width: 370px;
+  height: auto;
+  display: block;
+}
+
+.retinaimgt {
+  max-width: 270px;
+  height: auto;
+  display: block;
+}
+
 .antenna {
   padding: 25px 100px;
 }
