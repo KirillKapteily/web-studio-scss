@@ -3,6 +3,13 @@
   margin: 0 auto;
 }
 
+@media (min-width:1200px) {
+  .menu-toggle{
+    display: none;
+  }
+  
+}
+
 @media (min-width:768px) and (max-width:1199px) {
 
   .container {
@@ -18,6 +25,10 @@
   background: rgb(245, 244, 250);
   }
   
+.menu-toggle{
+  display: none;
+}
+
   .antenna{
   padding: 25px 144px!important;
   }
@@ -65,12 +76,15 @@
 
   .what__we__do {
     display: none;
+    color: #fff;
 
   }
 
   .header__list__contacts {
     flex-direction: column;
     padding-left: 0px;
+    position: relative;
+    left: 250px;
   }
 
   .what__we__do__img {
@@ -112,6 +126,10 @@
     margin: 0 auto;
     outline: red 1px solid;
   }
+
+.header__nav{
+
+}
 
 .active-b{
   color: rgb(33, 33, 33);

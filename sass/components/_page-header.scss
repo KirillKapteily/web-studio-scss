@@ -70,7 +70,7 @@
   justify-content: flex-start;
   gap: 50px;
   margin-right: auto;
-  width: 500px;
+  max-width: 500px;
   align-items: center;
 }
 
@@ -85,6 +85,7 @@
 
 .header__nav {
   display: flex;
+  max-width: 500px;
   justify-content: space-between;
 }
 
@@ -174,6 +175,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .decor__2 {
   position: relative;

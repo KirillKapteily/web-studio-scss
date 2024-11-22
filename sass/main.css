@@ -96,6 +96,11 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 768px;
@@ -106,6 +111,9 @@ body {
     height: 120px;
     border-radius: 4px;
     background: rgb(245, 244, 250);
+  }
+  .menu-toggle {
+    display: none;
   }
   .antenna {
     padding: 25px 144px !important;
@@ -143,10 +151,13 @@ body {
   }
   .what__we__do {
     display: none;
+    color: #fff;
   }
   .header__list__contacts {
     flex-direction: column;
     padding-left: 0px;
+    position: relative;
+    left: 250px;
   }
   .what__we__do__img {
     display: none;
@@ -795,7 +806,7 @@ body {
   justify-content: flex-start;
   gap: 50px;
   margin-right: auto;
-  width: 500px;
+  max-width: 500px;
   align-items: center;
 }
 
@@ -810,6 +821,7 @@ body {
 
 .header__nav {
   display: flex;
+  max-width: 500px;
   justify-content: space-between;
 }
 
