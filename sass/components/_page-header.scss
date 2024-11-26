@@ -6,6 +6,7 @@
   display: flex;
   height: 80px;
 
+
   .ttt {
     background-color: rgba(127, 255, 212, 0.541);
   }
@@ -103,7 +104,7 @@
 
 .header__phone {
   margin-right: 10px;
-  fill: #212121;
+fill: $our-command-substrate;
 
   .header__phone:hover {
     fill: #188CE8;
@@ -143,6 +144,112 @@
 //   border-radius: 4px;
 //   transition: background-color 0.3s ease, transform 0.3s ease;
 // }
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+ }
+ 
+ .menu-item {
+  position: relative;
+  margin-right: 15px;
+ }
+ 
+ .menu-item:hover .submenu {
+  display: block;
+ }
+ 
+ .menu-item:hover .menu-link {
+scale: (1.1);
+ }
+ 
+ .menu-link {
+  color: black;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  -o-transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  
+  &:hover{
+    color: rgb(66, 66, 66);
+  }
+ }
+ 
+ .submenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  list-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: none;
+ }
+
+ .submenu-link{
+  text-decoration: none;
+  color: white;
+ }
+
+
+ .sidebar-link{
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px; /* Ширина бокового меню */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px; /* Скрыто изначально */
+    background-color: #11111100;
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    transition: 0.3s; /* Плавный переход */
+    padding-top: 60px;
+}
+
+.closebtn{
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #57575743;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-left: 150px;
+}
+
+#main {
+    transition: margin-left 0.3s;
+    padding: 16px;
+}
+
 
 .active__ground1 {
   @extend .active__ground;

@@ -42,13 +42,13 @@
                             </div></a></li>
                     <li class="active"><a href="портфоліо.html" class="active">Портфоліо</a></li>
                     <li class="active"><a href="404.html" class="active">Контакти</a></li>
-                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                        <svg width="24" height="24" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
+                    <button class="openbtn" onclick="openMenu()">☰</button>
+                    <ul class="header-list">
+                        <li class="header-item"><a href="#" class="menu-link">Games</a></li>
+                        <li class="header-item">
+                            <a href="indexmacos.html" class="menu-link">Change OS to MacOS</a>
+                        </li>
+                    </ul>
                 </ul>
                 <ul class="header__list__contacts">
                     <li class="active__svg"><a href="mailto:info@devstudio.com" class="active mailto__2"><svg
@@ -147,42 +147,48 @@
                     <ul class="what__we__do__list">
                         <div class="thumb">
                             <li class="what__we__do__item">
-                                
+
                                 <picture>
-                                    <source srcset="images/345@1x.jpg" media="(min-width: 320px) and (max-width:620px)" class="retinaimg">
-                                    <source srcset="images/345@2x.jpeg" media="(min-width: 621px) and (max-width:1200px)" class="retinaimg">
+                                    <source srcset="images/345@1x.jpg" media="(min-width: 320px) and (max-width:620px)"
+                                        class="retinaimg">
+                                    <source srcset="images/345@2x.jpeg"
+                                        media="(min-width: 621px) and (max-width:1200px)" class="retinaimg">
                                     <source srcset="images/345@3x.jpeg" media="(min-width: 1201px)" class="retinaimg">
                                     <img src="/images/345@1x.jpg" alt="Cute puppy" class="retinaimg">
-                                  </picture>
+                                </picture>
                             </li>
                             <p class="label">Десктопні додатки</p>
                         </div>
                         <div class="thumb">
                             <li class="what__we__do__item">
                                 <picture>
-                                    <source srcset="images/543@1x.jpg" media="(min-width: 320px) and (max-width:620px)" class="retinaimg">
-                                    <source srcset="images/543@2x.jpeg" media="(min-width: 621px) and (max-width:1200px)" class="retinaimg">
+                                    <source srcset="images/543@1x.jpg" media="(min-width: 320px) and (max-width:620px)"
+                                        class="retinaimg">
+                                    <source srcset="images/543@2x.jpeg"
+                                        media="(min-width: 621px) and (max-width:1200px)" class="retinaimg">
                                     <source srcset="images/543@3x.jpeg" media="(min-width: 1201px)" class="retinaimg">
                                     <img src="img@1x.jpeg" alt="Cute puppy" class="retinaimg">
-                                  </picture>
+                                </picture>
                                 <!-- <img src="images/img2.jpg" alt="телефон і  клавіатура"
                                     class="what__we__do__img"> -->
-                                </li>
+                            </li>
                             <p class="label">Мобільні додатки</p>
                         </div>
                         <div class="thumb">
                             <li class="what__we__do__item">
-                                
+
                                 <picture>
-                                    <source srcset="images/54@1x.jpg" media="(min-width: 320px) and (max-width:620px)" class="retinaimg">
-                                    <source srcset="images/54@2x.png" media="(min-width: 621px) and (max-width:1200px)" class="retinaimg">
+                                    <source srcset="images/54@1x.jpg" media="(min-width: 320px) and (max-width:620px)"
+                                        class="retinaimg">
+                                    <source srcset="images/54@2x.png" media="(min-width: 621px) and (max-width:1200px)"
+                                        class="retinaimg">
                                     <source srcset="images/54@3x.png" media="(min-width: 1201px)" class="retinaimg">
                                     <img src="images/54@1x.jpg" alt="Cute puppy" class="retinaimg">
-                                  </picture>
-                                
+                                </picture>
+
                                 <!-- <img src="images/54@1x.jpg" alt="телефон і  клавіатура"
                                     class="what__we__do__img"> -->
-                                </li>
+                            </li>
                             <p class="label">Дизайнерські рішення</p>
                         </div>
                         </li>
@@ -199,11 +205,13 @@
                 <ul class="our__team__lisst">
                     <li class="our__team__item">
                         <picture>
-                            <source srcset="images/igor@1x.jpg" media="(min-width: 320px) and (max-width:620px)" class="retinaimgt">
-                            <source srcset="images/igor@2x.jpeg" media="(min-width: 621px) and (max-width:1200px)" class="retinaimgt">
+                            <source srcset="images/igor@1x.jpg" media="(min-width: 320px) and (max-width:620px)"
+                                class="retinaimgt">
+                            <source srcset="images/igor@2x.jpeg" media="(min-width: 621px) and (max-width:1200px)"
+                                class="retinaimgt">
                             <source srcset="images/igor@3x.jpeg" media="(min-width: 1201px)" class="retinaimgt">
                             <img src="images/igor@1x.jpg" alt="Cute puppy" class="retinaimgt">
-                          </picture>
+                        </picture>
                         <!-- <img src="images/ігордемяненко.jpg" alt="Ігор Дем'яненко" width="250"
                             class="our__team__picture__list"> -->
                         <br>
@@ -232,11 +240,13 @@
                     </li>
                     <li class="our__team__item">
                         <picture>
-                            <source srcset="images/olga@1x.jpg" media="(min-width: 320px) and (max-width:620px)" class="retinaimgt">
-                            <source srcset="images/olga@2x.jpeg" media="(min-width: 621px) and (max-width:1200px)" class="retinaimgt">
+                            <source srcset="images/olga@1x.jpg" media="(min-width: 320px) and (max-width:620px)"
+                                class="retinaimgt">
+                            <source srcset="images/olga@2x.jpeg" media="(min-width: 621px) and (max-width:1200px)"
+                                class="retinaimgt">
                             <source srcset="images/olga@3x.jpeg" media="(min-width: 1201px)" class="retinaimgt">
                             <img src="images/olga@1x.jpg" alt="Cute puppy" class="retinaimgt">
-                          </picture>
+                        </picture>
                         <!-- <img src="images/ольгарєпіна.jpg" alt="Ольга Рєпіна" width="250"
                             class="our__team__picture__list"> -->
                         <br>
@@ -263,11 +273,13 @@
                     </li>
                     <li class="our__team__item">
                         <picture>
-                            <source srcset="images/mukola@1x.jpg" media="(min-width: 320px) and (max-width:620px)" class="retinaimgt">
-                            <source srcset="images/mukola@2x.jpeg" media="(min-width: 621px) and (max-width:1200px)" class="retinaimgt">
+                            <source srcset="images/mukola@1x.jpg" media="(min-width: 320px) and (max-width:620px)"
+                                class="retinaimgt">
+                            <source srcset="images/mukola@2x.jpeg" media="(min-width: 621px) and (max-width:1200px)"
+                                class="retinaimgt">
                             <source srcset="images/mukola@3x.jpeg" media="(min-width: 1201px)" class="retinaimgt">
                             <img src="images/mukola@1x.jpg" alt="Cute puppy" class="retinaimgt">
-                          </picture>
+                        </picture>
                         <!-- <img src="images/миколатарасов.jpg" alt="Микола Тарасов" width="250"
                             class="our__team__picture__list"> -->
                         <br>
@@ -294,11 +306,13 @@
                     </li>
                     <li class="our__team__item">
                         <picture>
-                            <source srcset="images/micael@1x.jpg" media="(min-width: 320px) and (max-width:620px)" class="retinaimgt">
-                            <source srcset="images/micael@2x.jpeg" media="(min-width: 621px) and (max-width:1200px)" class="retinaimgt">
+                            <source srcset="images/micael@1x.jpg" media="(min-width: 320px) and (max-width:620px)"
+                                class="retinaimgt">
+                            <source srcset="images/micael@2x.jpeg" media="(min-width: 621px) and (max-width:1200px)"
+                                class="retinaimgt">
                             <source srcset="images/micael@3x.jpeg" media="(min-width: 1201px)" class="retinaimgt">
                             <img src="images/micael@1x.jpg" alt="Cute puppy" class="retinaimgt">
-                          </picture>
+                        </picture>
                         <!-- <img src="images/михайлоєрмаков.jpg" alt="Михайло Єрмаков" width="250"
                             class="our__team__picture__list"> -->
                         <br>
@@ -401,6 +415,37 @@
     </footer>
     <script src="mobile-menu.js"></script>
 </body>
+<script>
+    (() => {
+        const mobileMenu = document.querySelector('.js-menu-container');
+        const openMenuBtn = document.querySelector('.js-open-menu');
+        const closeMenuBtn = document.querySelector('.js-close-menu');
+
+        const toggleMenu = () => {
+            const isMenuOpen =
+                openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+            openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+            mobileMenu.classList.toggle('is-open');
+
+            const scrollLockMethod = !isMenuOpen
+                ? 'disableBodyScroll'
+                : 'enableBodyScroll';
+            bodyScrollLock[scrollLockMethod](document.body);
+        };
+
+        openMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+
+        // Close the mobile menu on wider screens if the device orientation changes
+        window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+            if (!e.matches) return;
+            mobileMenu.classList.remove('is-open');
+            openMenuBtn.setAttribute('aria-expanded', false);
+            bodyScrollLock.enableBodyScroll(document.body);
+        });
+    })();
+
+</script>
 <script src="script.js"></script>
 
 </html>

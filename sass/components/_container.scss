@@ -8,6 +8,13 @@
     display: none;
   }
   
+  .header-list{
+    display: none;
+      }
+    
+      .openbtn{
+        display: none;
+      }
 }
 
 @media (min-width:768px) and (max-width:1199px) {
@@ -16,6 +23,18 @@
     max-width: 768px;
     margin: 0 auto;
     // outline: red 1px solid;
+  }
+
+.client__list{
+  // max-width: 738px;
+}
+
+  .header-list{
+display: none;
+  }
+
+  .openbtn{
+    display: none;
   }
 
   .card__img__new{
@@ -38,7 +57,7 @@
   }
   
   .our__team__item {
-    width: 450px;
+    // width: 450px;
   }
 
   .webstudio {
@@ -48,12 +67,6 @@
 
   .our__team__lisst {
     padding-left: 15px;
-  }
-
-
-  .our__team__item {
-    width: 354px;
-    height: 536px;
   }
 
   .our__team__picture__list {
@@ -75,7 +88,7 @@
   }
 
   .what__we__do {
-    display: none;
+    display: none!important;
     color: #fff;
 
   }
@@ -85,6 +98,7 @@
     padding-left: 0px;
     position: relative;
     left: 250px;
+    gap: 0px!important;
   }
 
   .what__we__do__img {
@@ -100,9 +114,6 @@
   display: none!important;
 }
 
-.section__our__team{
-  display: none;
-}
 
 .footer__social__networking__wrapper{
   margin-left: 165px;
@@ -145,99 +156,6 @@
 }
 
 
-
-
-  .menu {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  .menu .link {
-    padding: 10px;
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .menu .link:hover,
-  .menu .link:focus {
-    text-decoration: underline;
-  }
-  
-  .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-  }
-  
-  @media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
-
-  }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 32px;
-    background-color: #3f51b500;
-    backdrop-filter: blur(10px);
-    z-index: 999;
-  
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-  }
-  
-  .menu-container.is-open {
-    transform: translateX(0);
-  }
-  
-  .menu-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    fill: #000000;
-  }
-  
-  .mobile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  .mobile-menu .link {
-    display: block;
-    padding: 10px;
-    color: #000000;
-    text-shadow: #fff 1px 0 10px;
-    text-decoration: none;
-  
-  }
-
-
-
-
-
   .webstudio {
     font-size: 24px;
     padding-left: 15px;
@@ -248,7 +166,7 @@
   }
 
   .card__img__new{
-    max-width: 450px!important;
+    max-width: 480px!important;
     min-width: 320px;
     height: 120px;
   border-radius: 4px;
@@ -345,7 +263,10 @@ height: 120px;
   }
 
   .footer__button {
+    margin-left: 0px!important;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   .card__img::before,
@@ -361,10 +282,10 @@ height: 120px;
     width: 100%;
   }
 
-  .our__team__picture__list {
-    width: 432px!important;
-    height: 440px!important;
-  }
+  // .our__team__picture__list {
+  //   width: 432px!important;
+  //   height: 440px!important;
+  // }
 
   .card__img__clock::before,
   .card__img__clock::after {

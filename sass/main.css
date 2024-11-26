@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto";
 }
@@ -100,11 +101,23 @@ body {
   .menu-toggle {
     display: none;
   }
+  .header-list {
+    display: none;
+  }
+  .openbtn {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 768px;
     margin: 0 auto;
+  }
+  .header-list {
+    display: none;
+  }
+  .openbtn {
+    display: none;
   }
   .card__img__new {
     width: 345px !important;
@@ -121,19 +134,12 @@ body {
   .efectivity {
     width: 100% !important;
   }
-  .our__team__item {
-    width: 450px;
-  }
   .webstudio, .webstudiof {
     font-size: 24px;
     margin-right: 87px !important;
   }
   .our__team__lisst {
     padding-left: 15px;
-  }
-  .our__team__item {
-    width: 354px;
-    height: 536px;
   }
   .our__team__picture__list {
     width: 354px;
@@ -150,7 +156,7 @@ body {
     flex-wrap: wrap;
   }
   .what__we__do {
-    display: none;
+    display: none !important;
     color: #fff;
   }
   .header__list__contacts {
@@ -158,6 +164,7 @@ body {
     padding-left: 0px;
     position: relative;
     left: 250px;
+    gap: 0px !important;
   }
   .what__we__do__img {
     display: none;
@@ -167,9 +174,6 @@ body {
   }
   .our__team {
     display: none !important;
-  }
-  .section__our__team {
-    display: none;
   }
   .footer__social__networking__wrapper {
     margin-left: 165px;
@@ -199,81 +203,6 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .menu {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  .menu .link {
-    padding: 10px;
-    color: inherit;
-    text-decoration: none;
-  }
-  .menu .link:hover,
-  .menu .link:focus {
-    text-decoration: underline;
-  }
-  .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-  }
-}
-@media (min-width: 320px) and (max-width: 480px) and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 32px;
-    background-color: rgba(63, 81, 181, 0);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    z-index: 999;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-  }
-  .menu-container.is-open {
-    transform: translateX(0);
-  }
-  .menu-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    fill: #000000;
-  }
-  .mobile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  .mobile-menu .link {
-    display: block;
-    padding: 10px;
-    color: #000000;
-    text-shadow: #fff 1px 0 10px;
-    text-decoration: none;
-  }
   .webstudio, .webstudiof {
     font-size: 24px;
     padding-left: 15px;
@@ -282,7 +211,7 @@ body {
     display: flex;
   }
   .card__img__new {
-    max-width: 450px !important;
+    max-width: 480px !important;
     min-width: 320px;
     height: 120px;
     border-radius: 4px;
@@ -363,7 +292,10 @@ body {
     display: none !important;
   }
   .footer__button {
+    margin-left: 0px !important;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
   }
   .card__img::before,
   .card__img::after {
@@ -375,10 +307,6 @@ body {
   }
   .backdrop {
     width: 100%;
-  }
-  .our__team__picture__list {
-    width: 432px !important;
-    height: 440px !important;
   }
   .card__img__clock::before,
   .card__img__clock::after {
@@ -642,7 +570,7 @@ body {
   margin-bottom: 94px;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 16px;
 }
 
 .our__team__item {
@@ -836,7 +764,7 @@ body {
 
 .header__phone {
   margin-right: 10px;
-  fill: #212121;
+  fill: #F5F4FA;
 }
 .header__phone .header__phone:hover {
   fill: #188CE8;
@@ -857,6 +785,105 @@ body {
   color: #2196F3;
   text-decoration: none;
   animation: jello-horizontal 0.9s both;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  z-index: 1;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 15px;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.menu-item:hover .menu-link {
+  scale: 1.1;
+}
+
+.menu-link {
+  color: black;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.menu-link:hover {
+  color: rgb(66, 66, 66);
+}
+
+.submenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  list-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: none;
+}
+
+.submenu-link {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-link {
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px; /* Ширина бокового меню */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px; /* Скрыто изначально */
+  background-color: rgba(17, 17, 17, 0);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  overflow-x: hidden;
+  transition: 0.3s; /* Плавный переход */
+  padding-top: 60px;
+}
+
+.closebtn {
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: rgba(87, 87, 87, 0.262745098);
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-left: 150px;
+}
+
+#main {
+  transition: margin-left 0.3s;
+  padding: 16px;
 }
 
 .active__ground1 {
