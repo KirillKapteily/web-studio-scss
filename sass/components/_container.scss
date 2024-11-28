@@ -4,6 +4,10 @@
 }
 
 @media (min-width:1200px) {
+.header__list{
+  width: 500px;
+}
+
   .menu-toggle{
     display: none;
   }
@@ -66,6 +70,7 @@ display: none;
   }
 
   .our__team__lisst {
+    flex-wrap: wrap;
     padding-left: 15px;
   }
 
@@ -77,6 +82,14 @@ display: none;
   .p__description {
     width: 354px;
   }
+
+.main__list__2{
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 368px;
+}
 
   .header__list {
     width: 97px !important;
@@ -133,13 +146,17 @@ display: none;
 
 @media (min-width:320px) and (max-width:480px){
   .container {
-    max-width: 480px;
+    max-width: 320px;
     margin: 0 auto;
     outline: red 1px solid;
   }
 
-.header__nav{
+  .header-list{
+    display: none;
+      }
 
+.header__nav{
+width: 30px;
 }
 
 .active-b{
@@ -162,6 +179,7 @@ display: none;
   }
 
   .header__list {
+    width: 30px;
     display: flex;
   }
 
@@ -191,7 +209,8 @@ display: none;
   }
 
   .main__title {
-    font-size: 26px;
+    margin-left: 0px!important;
+    font-size: 16px;
     font-weight: 900;
     line-height: 42px;
     margin-left: 140px;
@@ -203,19 +222,19 @@ display: none;
 }
 
 .modal{
-  min-width: 450px!important;
+  min-width: 320px!important;
 height: 609px!important;
 }
 
 .modal__input{
-  width: 370px!important;
+  width: 310px!important;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .modal__par{
   margin: 0px 0px;
-  margin-left: 50px!important;
+  margin-left: 0px!important;
 }
 
 .terms{
@@ -224,23 +243,32 @@ height: 609px!important;
 
 .modal__area{
   margin-top: 0px;
-  width: 370px!important;
+  width: 310px!important;
 height: 120px;
 }
 
 .modal__title{
-  font-size: 12px;
+  font-size: 7px;
+}
+
+.main__buttons__list{
+  height: 200px;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 320px;
 }
 
 .checkbox{
   position: relative;
   bottom: 20px;
-  left: 60px;
+  left: 10px;
 }
 
 .btn__close {
   position: relative;
-  left: 410px;
+  left: 300px;
 }
 
   .efectivity {
@@ -264,7 +292,8 @@ height: 120px;
 
   .footer__button {
     margin-left: 0px!important;
-    margin-top: 20px;
+    margin-right: 0px!important;
+    margin-top: 20px!important;
     display: flex;
     justify-content: center;
   }
@@ -287,6 +316,10 @@ height: 120px;
   //   height: 440px!important;
   // }
 
+body{
+  margin: 0px;
+}
+
   .card__img__clock::before,
   .card__img__clock::after {
     content: "";
@@ -296,10 +329,17 @@ height: 120px;
     border-radius: 4px;
   }
 
+  .our__team__item {
+width: 320px;
+  }
+
+.our__team{
+  width: 320px;
+}
 
   .our__team__lisst {
     flex-direction: column;
-
+width: 320px;
   }
 
   // .main__card {
@@ -347,6 +387,7 @@ height: 120px;
 
   .client__list {
     flex-wrap: wrap;
+    padding-left: 0px;
   }
 
 

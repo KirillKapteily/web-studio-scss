@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Roboto";
 }
@@ -98,6 +97,9 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .header__list {
+    width: 500px;
+  }
   .menu-toggle {
     display: none;
   }
@@ -139,6 +141,7 @@ body {
     margin-right: 87px !important;
   }
   .our__team__lisst {
+    flex-wrap: wrap;
     padding-left: 15px;
   }
   .our__team__picture__list {
@@ -147,6 +150,12 @@ body {
   }
   .p__description {
     width: 354px;
+  }
+  .main__list__2 {
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 368px;
   }
   .header__list {
     width: 97px !important;
@@ -187,9 +196,15 @@ body {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 320px;
     margin: 0 auto;
     outline: red 1px solid;
+  }
+  .header-list {
+    display: none;
+  }
+  .header__nav {
+    width: 30px;
   }
   .active-b {
     color: rgb(33, 33, 33);
@@ -208,6 +223,7 @@ body {
     padding-left: 15px;
   }
   .header__list {
+    width: 30px;
     display: flex;
   }
   .card__img__new {
@@ -231,7 +247,8 @@ body {
     display: none;
   }
   .main__title {
-    font-size: 26px;
+    margin-left: 0px !important;
+    font-size: 16px;
     font-weight: 900;
     line-height: 42px;
     margin-left: 140px;
@@ -242,37 +259,44 @@ body {
     align-items: center;
   }
   .modal {
-    min-width: 450px !important;
+    min-width: 320px !important;
     height: 609px !important;
   }
   .modal__input {
-    width: 370px !important;
+    width: 310px !important;
     margin-top: 0px;
     margin-bottom: 0px;
   }
   .modal__par {
     margin: 0px 0px;
-    margin-left: 50px !important;
+    margin-left: 0px !important;
   }
   .terms {
     font-size: 12px;
   }
   .modal__area {
     margin-top: 0px;
-    width: 370px !important;
+    width: 310px !important;
     height: 120px;
   }
   .modal__title {
-    font-size: 12px;
+    font-size: 7px;
+  }
+  .main__buttons__list {
+    height: 200px;
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 320px;
   }
   .checkbox {
     position: relative;
     bottom: 20px;
-    left: 60px;
+    left: 10px;
   }
   .btn__close {
     position: relative;
-    left: 410px;
+    left: 300px;
   }
   .efectivity {
     width: 100% !important;
@@ -293,7 +317,8 @@ body {
   }
   .footer__button {
     margin-left: 0px !important;
-    margin-top: 20px;
+    margin-right: 0px !important;
+    margin-top: 20px !important;
     display: flex;
     justify-content: center;
   }
@@ -308,6 +333,9 @@ body {
   .backdrop {
     width: 100%;
   }
+  body {
+    margin: 0px;
+  }
   .card__img__clock::before,
   .card__img__clock::after {
     content: "";
@@ -316,8 +344,15 @@ body {
     background-size: contain;
     border-radius: 4px;
   }
+  .our__team__item {
+    width: 320px;
+  }
+  .our__team {
+    width: 320px;
+  }
   .our__team__lisst {
     flex-direction: column;
+    width: 320px;
   }
   .main__list {
     flex-direction: column;
@@ -349,6 +384,7 @@ body {
   }
   .client__list {
     flex-wrap: wrap;
+    padding-left: 0px;
   }
   .footer__wrapper {
     flex-direction: column;
@@ -370,7 +406,7 @@ body {
   width: 1600;
   height: 600px;
   color: rgb(255, 255, 255);
-  background-image: linear-gradient(to right, rgba(46, 47, 59, 0.247), rgba(46, 47, 59, 0.247)), url("/images/efimg.jpg");
+  background-image: linear-gradient(to right, rgba(46, 47, 59, 0.247), rgba(46, 47, 59, 0.247)), url("../images/efimg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -421,7 +457,7 @@ body {
 }
 
 .retinaimgt {
-  max-width: 270px;
+  max-width: 320px;
   height: auto;
   display: block;
 }
@@ -565,12 +601,12 @@ body {
 }
 
 .our__team__lisst {
-  flex-wrap: wrap;
   list-style: none;
   margin-bottom: 94px;
   display: flex;
   justify-content: center;
   gap: 16px;
+  padding-left: 0px;
 }
 
 .our__team__item {
@@ -734,7 +770,7 @@ body {
   justify-content: flex-start;
   gap: 50px;
   margin-right: auto;
-  max-width: 500px;
+  width: 500px;
   align-items: center;
 }
 
@@ -749,7 +785,6 @@ body {
 
 .header__nav {
   display: flex;
-  max-width: 500px;
   justify-content: space-between;
 }
 
@@ -764,7 +799,7 @@ body {
 
 .header__phone {
   margin-right: 10px;
-  fill: #F5F4FA;
+  fill: #212121;
 }
 .header__phone .header__phone:hover {
   fill: #188CE8;
@@ -785,105 +820,6 @@ body {
   color: #2196F3;
   text-decoration: none;
   animation: jello-horizontal 0.9s both;
-}
-
-.menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  z-index: 1;
-}
-
-.menu-item {
-  position: relative;
-  margin-right: 15px;
-}
-
-.menu-item:hover .submenu {
-  display: block;
-}
-
-.menu-item:hover .menu-link {
-  scale: 1.1;
-}
-
-.menu-link {
-  color: black;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-.menu-link:hover {
-  color: rgb(66, 66, 66);
-}
-
-.submenu {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  margin: 0;
-  list-style: none;
-  padding: 10px;
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  display: none;
-}
-
-.submenu-link {
-  text-decoration: none;
-  color: white;
-}
-
-.sidebar-link {
-  text-shadow: rgb(0, 0, 0) 1px 0 10px;
-}
-
-.sidebar {
-  height: 100%;
-  width: 250px; /* Ширина бокового меню */
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -250px; /* Скрыто изначально */
-  background-color: rgba(17, 17, 17, 0);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  overflow-x: hidden;
-  transition: 0.3s; /* Плавный переход */
-  padding-top: 60px;
-}
-
-.closebtn {
-  text-shadow: rgb(0, 0, 0) 1px 0 10px;
-}
-
-.sidebar a {
-  padding: 10px 15px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  background-color: rgba(87, 87, 87, 0.262745098);
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  margin-left: 150px;
-}
-
-#main {
-  transition: margin-left 0.3s;
-  padding: 16px;
 }
 
 .active__ground1 {
@@ -1142,7 +1078,7 @@ footer {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background: rgba(33, 150, 243, 0);
-  width: 358px;
+  width: 320px;
   height: 50px;
   padding-left: 15px;
   color: white;
