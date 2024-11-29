@@ -42,7 +42,28 @@
                             </div></a></li>
                     <li class="active"><a href="портфоліо.html" class="active">Портфоліо</a></li>
                     <li class="active"><a href="404.html" class="active">Контакти</a></li>
+                </ul>
                     <button class="openbtn" onclick="openMenu()">☰</button>
+
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+        <a href="#" class="active__menu__n">Студія</a>
+        <a href="портфоліо.html" class="active__menu">Портфоліо</a>
+        <a href="#" class="active__menu">Контакти</a>
+
+<a href="tel:+380961111111" class=" menu__tell">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" class="active__menu ">info@devstudio.com</a>
+        
+        <a href="#" class="menu__contacts">Instagram</a>
+        <a href="#" class="menu__contacts">Twitter</a>
+        <a href="#" class="menu__contacts">Facebook</a>
+        <a href="#" class="menu__contacts">LinkedIn</a>
+    </div>
+
+    <!-- <div id="main">
+        <button class="openbtn" onclick="openMenu()">☰ Открыть меню</button>
+    </div> -->
+
                     <ul class="header-list">
                         <li class="header-item"><a href="#" class="menu-link">Games</a></li>
                         <li class="header-item">
@@ -107,7 +128,7 @@
 
                     <li>
                         <div class="card__img__new">
-                            <img src="../images/antenna.svg" alt="antenna" class="antenna">
+                            <img src="images/antenna.svg" alt="antenna" class="antenna">
                         </div>
                         <h3 class="list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="p__description">Ідейні міркування, і навіть початок повсякденної роботи з формування
@@ -115,7 +136,7 @@
                     </li>
                     <li>
                         <div class="card__img__new">
-                            <img src="../images/clock.svg" alt="antenna" class="antenna">
+                            <img src="images/clock.svg" alt="antenna" class="antenna">
                         </div>
                         <h3 class="list__title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="p__description">Завдання організації, особливо рамки і місце навчання кадрів тягне у
@@ -123,14 +144,14 @@
                     </li>
                     <li>
                         <div class="card__img__new">
-                            <img src="../images/diagram.svg" alt="antenna" class="antenna">
+                            <img src="images/diagram.svg" alt="antenna" class="antenna">
                         </div>
                         <h3 class="list__title">ПЛАНУВАННЯ</h3>
                         <p class="p__description">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li>
                         <div class="card__img__new">
-                            <img src="../images/astronaut.svg" alt="antenna" class="antenna">
+                            <img src="images/astronaut.svg" alt="antenna" class="antenna">
                         </div>
                         <h3 class="list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="p__description">Значимість цих проблем настільки очевидна, що реалізація планових
@@ -344,11 +365,13 @@
         <section class="clients">
             <h1 class="client__title">Постійні клієнти</h1>
             <ul class="client__list">
-                <li class="client__item"><svg width="41" height="46" class="client__ico">
+                <a href="#" class="client__link">
+                    <li class="client__item"><svg width="41" height="46" class="client__ico">
                         <use href="images/symbol-defs.svg#icon-yaico" fill="currentColor"></use>
                     </svg></li>
+                </a>
                 <li class="client__item"><svg width="40" height="52" class="client__ico">
-                        <use href="/images/symbol-defs.svg#icon-com-2"></use>
+                        <use href="images/symbol-defs.svg#icon-com-2"></use>
                     </svg></li>
                 <li class="client__item"><svg width="43" height="41" class="client__ico">
                         <use href="images/symbol-defs.svg#icon-coman"></use>
@@ -413,37 +436,18 @@
                 </form>
             </div>
     </footer>
-    <script src="mobile-menu.js"></script>
 </body>
 <script>
-    (() => {
-        const mobileMenu = document.querySelector('.js-menu-container');
-        const openMenuBtn = document.querySelector('.js-open-menu');
-        const closeMenuBtn = document.querySelector('.js-close-menu');
+   function openMenu() {
+    document.getElementById("sidebar").style.left = "0";
+    document.getElementById("main").style.marginLeft = "250px"; // Смещение основного контента
+}
 
-        const toggleMenu = () => {
-            const isMenuOpen =
-                openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-            openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-            mobileMenu.classList.toggle('is-open');
+function closeMenu() {
+    document.getElementById("sidebar").style.left = "-250px"; // Скрыть меню
+    document.getElementById("main").style.marginLeft = "0"; // Вернуть основной контент
+}
 
-            const scrollLockMethod = !isMenuOpen
-                ? 'disableBodyScroll'
-                : 'enableBodyScroll';
-            bodyScrollLock[scrollLockMethod](document.body);
-        };
-
-        openMenuBtn.addEventListener('click', toggleMenu);
-        closeMenuBtn.addEventListener('click', toggleMenu);
-
-        // Close the mobile menu on wider screens if the device orientation changes
-        window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-            if (!e.matches) return;
-            mobileMenu.classList.remove('is-open');
-            openMenuBtn.setAttribute('aria-expanded', false);
-            bodyScrollLock.enableBodyScroll(document.body);
-        });
-    })();
 
 </script>
 <script src="script.js"></script>

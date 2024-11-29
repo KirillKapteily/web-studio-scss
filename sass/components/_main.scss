@@ -78,6 +78,7 @@
   fill: rgb(175, 177, 184);
   color: rgb(175, 177, 184);
 
+
   &:hover {
     color: #188CE8;
   }
@@ -87,11 +88,8 @@
 .client__item {
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
-  display: flex;
+  @include flexunifide;
   width: 170px;
-  
-  justify-content: center;
-  align-items: center;
   height: 92px;
   transition: color 0.3s ease, transform 0.3s ease;
   transition-duration: 250ms;
@@ -101,5 +99,4 @@
   &:hover {
     border-color: $accent-color;
   }
-
 }

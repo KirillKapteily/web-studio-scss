@@ -148,7 +148,6 @@ display: none;
   .container {
     max-width: 320px;
     margin: 0 auto;
-    outline: red 1px solid;
   }
 
   .header-list{
@@ -196,6 +195,7 @@ width: 30px;
   }
 
   .header__list__contacts {
+    display: none;
     display: flex;
     flex-direction: column;
   }
@@ -404,6 +404,10 @@ width: 320px;
   .footer__form {
     margin-left: 0px !important;
   }
+
+.header__tell{
+  display: none;
+}
 
   .footer__input {
     width: 258px;

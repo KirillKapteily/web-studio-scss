@@ -35,7 +35,7 @@
 
 <body>
     <div class="container">
-    <header class="header-page">
+    <header class="test">
                 <a href="index.html" class="webstudio">Web<span class="studio">Studio</span></a>
                 <nav class="header__nav">
                     <ul class="header__list">
@@ -43,6 +43,22 @@
                         <li class="active__r__now"><a href="портфоліо.html" class="active__r__now">Портфоліо</a></li>
                         <li class="active"><a href="404.html" class="active">Контакти</a></li>
                     </ul>
+                    <button class="openbtn" onclick="openMenu()">☰</button>
+
+                    <div id="sidebar" class="sidebar">
+                        <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+                        <a href="index.html" class="active__menu">Студія</a>
+                        <a href="портфоліо.html" class="active__menu__n">Портфоліо</a>
+                        <a href="#" class="active__menu">Контакти</a>
+                
+                <a href="tel:+380961111111" class=" menu__tell">+38 096 111 11 11</a>
+                        <a href="mailto:info@devstudio.com" class="active__menu ">info@devstudio.com</a>
+                        
+                        <a href="#" class="menu__contacts">Instagram</a>
+                        <a href="#" class="menu__contacts">Twitter</a>
+                        <a href="#" class="menu__contacts">Facebook</a>
+                        <a href="#" class="menu__contacts">LinkedIn</a>
+                    </div>
                     <ul class="header__list__contacts">
                         <li class="active__svg"><a href="mailto:info@devstudio.com" class="active mailto__2"
                                 ><svg class="header__mail" width="16" height="12">
@@ -73,7 +89,7 @@
                         <button class="active__ground" type="button">Дизайн</button>
                     </li>
                     <li class="main__buttons__item">
-                        <button class="active__ground" type="button">Мркетинг</button>
+                        <button class="active__ground" type="button">Маркетинг</button>
                     </li>
                 </ul>
             </section>
@@ -309,5 +325,18 @@
         </div>
     </footer>
 </body>
+<script>
+    function openMenu() {
+     document.getElementById("sidebar").style.left = "0";
+     document.getElementById("main").style.marginLeft = "250px"; // Смещение основного контента
+ }
+ 
+ function closeMenu() {
+     document.getElementById("sidebar").style.left = "-250px"; // Скрыть меню
+     document.getElementById("main").style.marginLeft = "0"; // Вернуть основной контент
+ }
+ 
+ 
+ </script>
 
 </html>

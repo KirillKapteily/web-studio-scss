@@ -12,7 +12,7 @@
 //   background-position: center;
 // }
 
-// .header__tell {
+// .header__tell{
 //   @extend .active;
 //   color: $grey-text-color;
 
@@ -461,10 +461,22 @@
 }
 
 .header__tell {
-  @extend .active;
-  color: $grey-text-color;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 2%;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #757575;
 
   font-weight: 500;
+
+  &:hover{
+    color: #188CE8;
+  }
 }
 
 .active__ground {
@@ -622,8 +634,8 @@
 
 .decor__2 {
   position: relative;
-  top: 20px;
-  right: -126px;
+  top: 30px;
+  right: -124px;
   width: 78px;
   height: 4px;
   border-radius: 2px;
@@ -705,6 +717,99 @@
   }
 }
 
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 10px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #00bcd4;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+}
+
+.nav-list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.nav-list.active {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+      display: none;
+  }
+  .nav-list {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      background-color: transparent;
+  }
+}
+
+.menu__tell{
+  margin-top: 100px;
+  color: #188CE8;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu__contacts{
+  width: 10px;
+  color: #188CE8;
+  font-size: 18px;
+}
 
 .studio {
   color: black;
@@ -727,6 +832,81 @@
   width: 145px;
   height: 31px;
 }
+
+.sidebar-link{
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px; /* Ширина бокового меню */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px; /* Скрыто изначально */
+    background-color: #ffffff;
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    transition: 0.3s; /* Плавный переход */
+    padding-top: 60px;
+}
+
+.closebtn{
+  color: black;
+  font-size: 50px;
+position: relative;
+bottom: 10px;
+left: 190px;
+  text-decoration: none;
+}
+
+
+.active__menu__n{
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #188CE8;
+  display: block;
+  transition: 0.3s;
+}
+
+.active__menu{
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar  {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #57575743;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+#main {
+    transition: margin-left 0.3s;
+    padding: 16px;
+}
+
+
+
 
 @keyframes jello-horizontal {
   0% {
