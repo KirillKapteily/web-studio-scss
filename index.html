@@ -43,33 +43,33 @@
                     <li class="active"><a href="портфоліо.html" class="active">Портфоліо</a></li>
                     <li class="active"><a href="404.html" class="active">Контакти</a></li>
                 </ul>
-                    <button class="openbtn" onclick="openMenu()">☰</button>
+                <button class="openbtn" onclick="openMenu()">☰</button>
 
-    <div id="sidebar" class="sidebar">
-        <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
-        <a href="#" class="active__menu__n">Студія</a>
-        <a href="портфоліо.html" class="active__menu">Портфоліо</a>
-        <a href="#" class="active__menu">Контакти</a>
+                <div id="sidebar" class="sidebar">
+                    <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+                    <a href="#" class="active__menu__n">Студія</a>
+                    <a href="портфоліо.html" class="active__menu">Портфоліо</a>
+                    <a href="#" class="active__menu">Контакти</a>
 
-<a href="tel:+380961111111" class=" menu__tell">+38 096 111 11 11</a>
-        <a href="mailto:info@devstudio.com" class="active__menu ">info@devstudio.com</a>
-        
-        <a href="#" class="menu__contacts">Instagram</a>
-        <a href="#" class="menu__contacts">Twitter</a>
-        <a href="#" class="menu__contacts">Facebook</a>
-        <a href="#" class="menu__contacts">LinkedIn</a>
-    </div>
+                    <a href="tel:+380961111111" class=" menu__tell">+38 096 111 11 11</a>
+                    <a href="mailto:info@devstudio.com" class="active__menu ">info@devstudio.com</a>
 
-    <!-- <div id="main">
+                    <a href="#" class="menu__contacts">Instagram</a>
+                    <a href="#" class="menu__contacts">Twitter</a>
+                    <a href="#" class="menu__contacts">Facebook</a>
+                    <a href="#" class="menu__contacts">LinkedIn</a>
+                </div>
+
+                <!-- <div id="main">
         <button class="openbtn" onclick="openMenu()">☰ Открыть меню</button>
     </div> -->
 
-                    <ul class="header-list">
-                        <li class="header-item"><a href="#" class="menu-link">Games</a></li>
-                        <li class="header-item">
-                            <a href="indexmacos.html" class="menu-link">Change OS to MacOS</a>
-                        </li>
-                    </ul>
+                <ul class="header-list">
+                    <li class="header-item"><a href="#" class="menu-link">Games</a></li>
+                    <li class="header-item">
+                        <a href="indexmacos.html" class="menu-link">Change OS to MacOS</a>
+                    </li>
+                </ul>
                 </ul>
                 <ul class="header__list__contacts">
                     <li class="active__svg"><a href="mailto:info@devstudio.com" class="active mailto__2"><svg
@@ -367,8 +367,8 @@
             <ul class="client__list">
                 <a href="#" class="client__link">
                     <li class="client__item"><svg width="41" height="46" class="client__ico">
-                        <use href="images/symbol-defs.svg#icon-yaico" fill="currentColor"></use>
-                    </svg></li>
+                            <use href="images/symbol-defs.svg#icon-yaico" fill="currentColor"></use>
+                        </svg></li>
                 </a>
                 <li class="client__item"><svg width="40" height="52" class="client__ico">
                         <use href="images/symbol-defs.svg#icon-com-2"></use>
@@ -438,15 +438,15 @@
     </footer>
 </body>
 <script>
-   function openMenu() {
-    document.getElementById("sidebar").style.left = "0";
-    document.getElementById("main").style.marginLeft = "250px"; // Смещение основного контента
-}
+    function openMenu() {
+        document.getElementById("sidebar").style.left = "0";
+        document.getElementById("main").style.marginLeft = "250px"; // Смещение основного контента
+    }
 
-function closeMenu() {
-    document.getElementById("sidebar").style.left = "-250px"; // Скрыть меню
-    document.getElementById("main").style.marginLeft = "0"; // Вернуть основной контент
-}
+    function closeMenu() {
+        document.getElementById("sidebar").style.left = "-250px"; // Скрыть меню
+        document.getElementById("main").style.marginLeft = "0"; // Вернуть основной контент
+    }
 
 
 </script>
